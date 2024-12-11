@@ -17,7 +17,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0em;
+    padding: 6em 0em;
 }
 
 .outfit{
@@ -59,9 +59,11 @@ body{
     border-radius: 1em;
 }
 
-.preparation-time h3 {
+.pt-title {
     color: hsl(332, 51%, 32%);
     padding-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .preparation-time ul {
@@ -86,6 +88,7 @@ body{
 .ingredients ul , .instructions ol {
     padding-left: 1.5em;
     padding-bottom: 1.5em;
+    font-family: "outfit";
 }
 
 .ingredients li, .instructions li, .nutrition li {
@@ -102,19 +105,30 @@ body{
     font-weight: bold;
 }
 
-.nutrition ul {
-    list-style: none;
+.nutritions {
+    font-family: "outfit";
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
-.nutrition li {
+.nutritions p {
+    padding-left: 2em;
     padding-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: hsl(30, 10%, 34%);;
 }
 
 .value {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
+}
+
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
 }
 
 @media screen and (max-width: 768px) {
